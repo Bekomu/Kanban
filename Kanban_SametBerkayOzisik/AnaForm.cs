@@ -88,5 +88,6 @@ namespace Kanban_SametBerkayOzisik
             KategoriForm form = new KategoriForm(veri);
             form.ShowDialog();
         }
+
     }
 }

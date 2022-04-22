@@ -36,6 +36,7 @@ namespace Kanban_SametBerkayOzisik
                 pboRenk.BackColor = renkSecici.Color;
             }
         }
+
         private void btnEkle_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtKategoriAd.Text))

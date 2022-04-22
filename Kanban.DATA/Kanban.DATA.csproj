@@ -51,7 +51,6 @@
     <Compile Include="Models\Durum.cs" />
     <Compile Include="Models\Veri.cs" />
     <Compile Include="Models\Kategori.cs" />
-    <Compile Include="Models\Not.cs" />
     <Compile Include="Models\Proje.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

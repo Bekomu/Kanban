@@ -31,10 +31,11 @@ namespace Kanban_SametBerkayOzisik
         }
         private void cboKategori_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cboKategori.SelectedIndex != -1)
+            if (cboKategori.SelectedIndex != -1)
             {
                 Kategori seciliKategori = (Kategori)cboKategori.SelectedItem;
                 pnlNotYeni.BackColor = seciliKategori.Renk;
+                lblKategori.Text = seciliKategori.Ad;
             }
         }
         private void txtIcerik_TextChanged(object sender, EventArgs e)
@@ -42,7 +43,7 @@ namespace Kanban_SametBerkayOzisik
             if (!string.IsNullOrEmpty(txtIcerik.Text))
             {
                 lblIcerik.Text = txtIcerik.Text;
-                lblKalan.Text = "Kalan : "+(140 - txtIcerik.TextLength).ToString();
+                lblKalan.Text = "Kalan : " + (140 - txtIcerik.TextLength).ToString();
             }
         }
         private void txtBaslik_TextChanged(object sender, EventArgs e)
@@ -54,7 +55,7 @@ namespace Kanban_SametBerkayOzisik
         }
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtBaslik.Text) && 
+            if (!string.IsNullOrEmpty(txtBaslik.Text) &&
                 !string.IsNullOrEmpty(txtIcerik.Text) &&
                 cboKategori.SelectedIndex != -1)
             {

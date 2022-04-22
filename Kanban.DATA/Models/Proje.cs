@@ -11,7 +11,6 @@ namespace Kanban.DATA.Models
     {
         public Proje()
         {
-            Notlar = new List<Not>();
             OlusturulmaZamani = DateTime.Now;
             Id = Guid.NewGuid();
             NotPaneller = new List<Panel>();
@@ -19,7 +18,6 @@ namespace Kanban.DATA.Models
         public Guid Id { get; set; }
         public string Ad { get; set; }
         public DateTime OlusturulmaZamani { get; set; }
-        public ICollection<Not> Notlar { get; set; }
         public List<Panel> NotPaneller { get; set; }
     }
 }

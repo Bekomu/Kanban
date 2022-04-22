@@ -27,7 +27,6 @@ namespace Kanban_SametBerkayOzisik
             dgvProjeListe.Columns[0].Visible = false;
             dgvProjeListe.Columns[1].HeaderText = "Proje Adı";
             dgvProjeListe.Columns[2].Visible = false;
-            dgvProjeListe.Columns[3].Visible = false;
         }
         public void dgvProjeListe_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
